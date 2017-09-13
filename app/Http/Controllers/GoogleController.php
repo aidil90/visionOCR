@@ -10,7 +10,7 @@ class GoogleController extends Controller
 {
     public function getData()
     {
-    	$projectId = 'seventh-acronym-179102';
+    	$projectId = '';
     	$path = public_path('receipt2.jpg');
 
     	$vision = new VisionClient([
