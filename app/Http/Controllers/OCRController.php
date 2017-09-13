@@ -62,45 +62,6 @@ class OCRController extends Controller
            . "<b>GST AMOUNT: </b>" . $gstAmnt . "<br>"
            .  $totalAmnt;
 
-        // $gstId = '';
-        // $company =  implode(" ", array_slice($result,0,2)) . PHP_EOL;
-        
-        // // echo $company;
-        
-        // //get GST ID
-        // $pos1 = (strpos($data, "GST ID : "));
-        // $gst = (string)substr($data, $pos1, $pos1 + 1);
-        // //$gst = implode(PHP_EOL, string_slice($gst,0,2)) . PHP_EOL;
-        // $gstId = '';
-
-        // dd($gst);
-
-        
-        // // $subject = "abcdef";
-        // // $pattern = '/^def/';
-        // // preg_match($pattern, substr($subject,3), $matches, PREG_OFFSET_CAPTURE);
-        // // print_r($matches);
-        // //'~[0-9]~'
-
-        // stristr($data, ('GST ID : '));
-    
-        // //GET TOTAL GST
-        // $pos2 = (strpos($data, "6%"));
-        // $gstTotal = substr($data, $pos2);
-        // $gstTotal = explode(" ", $gstTotal);
-        // $gstAmnt = $gstTotal[0];
-        
-        // //GET TOTAL AMOUNT
-        // $pos3 = (strpos($data, "Total "));
-        // $total = substr($data, $pos3, $pos3 + 3);
-        // $total = explode(" ", $total);
-        // $totalAmnt = $total[0];
-        
-        // echo "COMPANY NAME: " . $company . "<br>"
-        //    . $gstId . "<br>"
-        //    . "GST AMOUNT: " . $gstAmnt . "<br>"
-        //    . "TOTAL " . $totalAmnt;
-
     }
 }
 ?>
