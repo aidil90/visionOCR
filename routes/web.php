@@ -17,7 +17,6 @@ Route::get('/', function () {
 
 
 Route::get('/tesseract', 'OCRController@getData');
-Route::get('/vision', 'VisionController@getTest');
 Route::get('/google', 'GoogleController@getData');
 
 // Route::get('/test', function () {

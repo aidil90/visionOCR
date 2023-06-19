@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-require 'C:/Users/aidil/Documents/work/project/vendor/autoload.php';
+//require 'C:/Users/aidil/Documents/work/project/vendor/autoload.php';
 
 use Google\Cloud\Vision\VisionClient;
 

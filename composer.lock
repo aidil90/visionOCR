@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "34757d6a6e7d2ecb06e5331d64f60814",
+    "content-hash": "631dbeeb2a49621e4b5237a082977627",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2594,37 +2594,38 @@
         },
         {
             "name": "thiagoalessio/tesseract_ocr",
-            "version": "1.1.0",
+            "version": "2.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thiagoalessio/tesseract-ocr-for-php.git",
-                "reference": "2bd8c58cce73d8c6e4914a9a0f44882da872cb47"
+                "reference": "0f10bd7b02bdcba59c4fbd98fbd93a56f93b09b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thiagoalessio/tesseract-ocr-for-php/zipball/2bd8c58cce73d8c6e4914a9a0f44882da872cb47",
-                "reference": "2bd8c58cce73d8c6e4914a9a0f44882da872cb47",
+                "url": "https://api.github.com/repos/thiagoalessio/tesseract-ocr-for-php/zipball/0f10bd7b02bdcba59c4fbd98fbd93a56f93b09b7",
+                "reference": "0f10bd7b02bdcba59c4fbd98fbd93a56f93b09b7",
                 "shasum": ""
             },
+            "require": {
+                "php": "^5.3 || ^7.0 || ^8.0"
+            },
             "require-dev": {
-                "codeclimate/php-test-reporter": "dev-master",
-                "phpunit/phpunit": "5.3.2"
+                "phpunit/php-code-coverage": "^2.2.4 || ^9.0.0"
             },
             "type": "library",
             "autoload": {
-                "classmap": [
-                    "src"
-                ]
+                "psr-4": {
+                    "thiagoalessio\\TesseractOCR\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "Apache-2.0"
+                "MIT"
             ],
             "authors": [
                 {
-                    "name": "Thiago Alessio Pereira",
-                    "email": "thiagoalessio@me.com",
-                    "homepage": "http://thiagoalessio.me"
+                    "name": "thiagoalessio",
+                    "email": "thiagoalessio@me.com"
                 }
             ],
             "description": "A wrapper to work with Tesseract OCR inside PHP.",
@@ -2633,7 +2634,12 @@
                 "Tesseract",
                 "text recognition"
             ],
-            "time": "2017-06-03T11:09:19+00:00"
+            "support": {
+                "irc": "irc://irc.freenode.net/tesseract-ocr-for-php",
+                "issues": "https://github.com/thiagoalessio/tesseract-ocr-for-php/issues",
+                "source": "https://github.com/thiagoalessio/tesseract-ocr-for-php"
+            },
+            "time": "2021-06-04T21:21:33+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -4323,5 +4329,6 @@
     "platform": {
         "php": ">=5.6.4"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
 }

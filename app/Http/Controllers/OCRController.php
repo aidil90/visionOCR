@@ -2,17 +2,19 @@
 
 namespace App\Http\Controllers;
 
-//use App\Libraries\TesseractOCR;
 use Illuminate\Http\Request;
-use TesseractOCR;
+use thiagoalessio\TesseractOCR\TesseractOCR;
+
+;
 
 class OCRController extends Controller
 {
     public function getData()
     {
         
-        $tesseract = (new TesseractOCR(public_path("receipt2.jpg")))
-                  ->executable('"C:\Program Files (x86)\Tesseract-OCR\tesseract"');
+        $tesseract = (new TesseractOCR(public_path("mrbean.jpg")))->run();
+        
+        dd($tesseract);
 
         $data = (string)$tesseract ->run();
         
